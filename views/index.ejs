@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> NTI Gymnasiet Caféteria </title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+
+    <div class="header">
+        <img src="public/img/nti-gymnasiet-logo.png" alt="ntig" class="img">
+        <div class="main">
+            <ul>
+                <li><a href="http://www.novasoftware.se/webviewer/(S(gaxlzqvgnh5nsa45jcupfb3n))/MZDesign1.aspx?schoolid=80080&code=546658#" target="_blank"> Schema </a></li>
+                <li><a href="https://sms.schoolsoft.se/nti/jsp/Login.jsp?eventMessage=ERR_Not_Logged_In" target="_blank"> Schoolsoft </a></li>
+                <li><a href="https://mat.sodapps.io/" target="_blank"> Sodmat </a></li>
+                <li><a href="https://www.ntigymnasiet.se/sodertorn/" target="_blank"> NTI Gymnasiet </a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="https://www.instagram.com/ntisodertorn/?hl=en" target="_blank" class="fa fa-instagram" aria-hidden="true"></a></li>
+                <li><a href="https://www.facebook.com/ntisodertorn/" target="_blank" class="fa fa-facebook-f" aria-hidden="true"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCf7DmB9NKTJ86MOn4sPON3w" target="_blank" class="fa fa-youtube" aria-hidden="true"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="logo">
+        <img src="public/img/nti-transparent-logo.png" alt="logo">
+    </div>
+
+    <section id="down-arrow" class="demo">
+        <a href="#shop"><span></span></a>
+    </section>
+
+        <div id="line-breaker">
+        </div>
+
+        <div class="body" id="shop">
+            <% meny.forEach(vara => { %>  <!-- en loop som loopar utfrån varor som blir skickad från server.js -->
+                <%- include('partials/vara', { vara: vara }); %> <!-- skickar iväg alla varor till vara.ejs -->
+            <% }); %>
+        </div>
+
+    <div id="footer">
+        <p> © NTI Gymnasiet 2020 &nbsp • &nbsp Röntgenvägen 19, 141 52 Huddinge &nbsp • &nbsp Tel: 08-556 408 50 &nbsp • &nbsp Created by Akdim - Hashous - Wahrman &nbsp • &nbsp All Rights Reserved </p>
+    </div>
+</body>
+</html>

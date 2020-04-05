@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header{                                                                      /*https://ak1.picdn.net/shutterstock/videos/22888141/thumb/1.jpg*/
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0, 0, 0, 0.55)), url(../img/cafeteria_4.jpg);
+    height: 99vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.header img{
+    width: 21%;
+    height: 8%;
+    margin-top: 15px;
+    margin-left: -30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main{
+    position: absolute;
+    top: 5.5%;
+    margin-left: 730px;
+    transform: translate(-53%, -50%);
+}
+
+.main ul{
+    left: 0;
+    list-style-type: none;
+    margin-top: 5px;
+    margin-left: 500px;
+}
+
+.main ul li{
+    display: inline-block;
+}
+
+.main ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 30px;
+    border: 1px solid transparent #fff;
+    transition: 0.6s ease;
+    font-size: 19px;
+    font-family: LakersRegular;
+}
+
+.main ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.social{
+    position: absolute;
+    top: 5.5%;
+    right: 0.1%;
+    transform: translate(-53%, -50%);
+}
+
+.social li{
+    list-style: none;
+    margin: 15px;
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.social li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#down-arrow a{
+    padding-top: 60px;
+}
+
+#down-arrow a span{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+#down-arrow a span::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+#line-breaker{
+    width: 100%;
+    height: 1vh;
+    background-color: #252525b2;
+}
+
+.body{
+    background-color: rgb(255, 255, 255);
+    height: 80vh;
+}
+
+.varor{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    min-width: 250px;
+    max-width: 250px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 53px;
+    margin-bottom: 20px;
+}
+
+.price{
+    color: grey;
+    font-size: 22px;
+}
+
+.varor button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #3a3333;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.varor button:hover{
+    opacity: 0.7;
+}
+.varor h1{
+    font-size: 25px;
+}
+
+#footer{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #252525;
+    height: 3vh;
+    padding-top: 17px;
+    color: rgba(255, 255, 255, 0.795);
+    text-align: center;
+    font-size: 12px;
+}
+
+@font-face{
+    font-family: LakersRegular;
+    src: url(fonts/LakersRegular.otf);
+}
